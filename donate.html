@@ -1,0 +1,872 @@
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  
+
+  <link rel="stylesheet"
+    href="https://d2s3ptptdai04x.cloudfront.net/get-flowbite-pro.b003f310-2085-40b7-8981-f53b3e226b66.css?Expires=1687514530&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMnMzcHRwdGRhaTA0eC5jbG91ZGZyb250Lm5ldC9nZXQtZmxvd2JpdGUtcHJvLmIwMDNmMzEwLTIwODUtNDBiNy04OTgxLWY1M2IzZTIyNmI2Ni5jc3MiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODc1MTQ1MzB9fX1dfQ__&amp;Signature=XB6L3A3-tPdlsWVqUBBLl1dOf7KY11geE4RSmEWXXXvkT8QpMkSEImG~y1FBfMKEphiDIZIARlwU6yQoMFzxGa-LWr6DTOP2OS4Spd54zHZl-D1mNjj6aaFp4RppMos3~FIDPAcWiQem2lu~rinTpKf~7elFzjd5Tr9aU7Bb-Yu0Jq53PtFoX~E0XxTtmNyL05SsXE0u97YTtQnqtMsaJFu-Ef-~zbQDA0pkTC-4fjKGBwZq0NBDxiTAbQ96zWMMopqeN81yTeAQK4Z4bNEZbzLjqALJl771QDCnWT6VAphr8MhoNePZKSM4TFHCvtrEszLnEBwkiVhCNrVFdbwBkA__&amp;Key-Pair-Id=K2J5W1U51CTOXP">
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: { "50": "#fdf2f8", "100": "#fce7f3", "200": "#fbcfe8", "300": "#f9a8d4", "400": "#f472b6", "500": "#ec4899", "600": "#db2777", "700": "#be185d", "800": "#9d174d", "900": "#831843" }
+          }
+        },
+        fontFamily: {
+          "body": ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "system-ui", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+          "sans": ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "system-ui", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
+        }
+      }
+    }
+  </script>
+
+
+  <!-- <style> 
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb
+    }
+
+    ::after,
+    ::before {
+      --tw-content: ''
+    }
+
+    html {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      -moz-tab-size: 4;
+      tab-size: 4;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-feature-settings: normal;
+      font-variation-settings: normal
+    }
+
+    body {
+      margin: 0;
+      line-height: inherit
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit
+    }
+
+    b,
+    strong {
+      font-weight: bolder
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 1em
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0
+    }
+
+    button,
+    select {
+      text-transform: none
+    }
+
+    [type=button],
+    [type=reset],
+    [type=submit],
+    button {
+      /* -webkit-appearance: button; */
+      background-color: transparent;
+      background-image: none
+    }
+
+    :-moz-focusring {
+      outline: auto
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    [type=search] {
+      /* -webkit-appearance: textfield; */
+      outline-offset: -2px
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit
+    }
+
+    summary {
+      display: list-item
+    }
+
+    blockquote,
+    dd,
+    dl,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    pre {
+      margin: 0
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0
+    }
+
+    legend {
+      padding: 0
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    textarea {
+      resize: vertical
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af
+    }
+
+    [role=button],
+    button {
+      cursor: pointer
+    }
+
+    :disabled {
+      cursor: default
+    }
+
+    audio,
+    canvas,
+    embed,
+    iframe,
+    img,
+    object,
+    svg,
+    video {
+      display: block;
+      /* vertical-align: middle */
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto
+    }
+
+    [hidden] {
+      display: none
+    }
+
+    *,
+    ::before,
+    ::after {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia:
+    }
+
+    ::-webkit-backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia:
+    }
+
+    ::backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia:
+    }
+
+
+    .dropbtn {
+      background-color: #0087ca;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-right: 20px;
+      border-radius: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 135px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      margin-right: 20px;
+      border-radius: 20px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      border-radius: 20px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      border-radius: 20px;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #0087fa;
+    }
+  </style> -->
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <!-- 
+    <div class="w-full sticky top-0 z-30 text-gray-700 bg-white shadow-md dark-mode:text-gray-200 dark-mode:bg-gray-800">
+        <div x-data="{ open: false }"
+          class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+          <div class="p-4 flex flex-row items-center justify-between">
+            <a href="/index.html"
+              class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+              <img
+                src="https://brandcenter.rotary.org/-/jssmedia/project/rotary/brandcenter/rotarymbs-simple_rgb.png?mw=116&mh=44"
+                width="100px">
+            </a>
+            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path x-show="!open" fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+                <path x-show="open" fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+          <nav :class="{'flex': open, 'hidden': !open}"
+            class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+    
+            <a class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation 6"
+              href="/index.html">Home</a>
+    
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+              <button @click="open = !open"
+                class="flex flex-row items-center w-full px-4 py-2 mt-2 text-lg font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 hover-underline-animation">
+                <span>About</span>
+                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                  class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <div style="z-index:10;" x-show="open" x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="  absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="/About Us.html">About Rotary</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="/memberslist.html">Members</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="/members.html">About Members</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">About Work</a>
+                </div>
+              </div>
+            </div>
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+              <button @click="open = !open"
+                class="flex flex-row items-center w-full px-4 py-2 mt-2 text-lg font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 hover-underline-animation">
+                <span>Dropdown</span>
+                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                  class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <div style="z-index:10;" x-show="open" x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="  absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Link #1</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Link #2</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Link #3</a>
+                </div>
+              </div>
+    
+    
+    
+            </div>
+    
+            <a class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover-underline-animation"
+              href="/Contact Us.html">Contact Us</a>
+    
+            <a href="/signin.html"
+              class="hover-underline-animation sign-icon px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover-underline-animation"><i
+                class="fa-solid fa-user" style="color: #0087ca;"></i></a>
+    
+            <div class="flex items-center ml-4  rounded-lg  bg-blue-500 px-4  text-white duration-100 hover:bg-blue-600">
+              <button class="text-lg"> <a href="/donate.html"> Donate</a>
+              </button>
+            </div>
+          </nav>
+    
+        </div>
+      </div> -->
+
+  <nav
+    class="bg-white shadow-md dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="" class="flex items-center">
+        <img src="https://www.rotary-ribi.org/upimages/PageMainPics/4_Wheel2013_Transp_1200.png" class="h-8 mr-3"
+          alt=" Logo">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ishanya</span>
+      </a>
+      <div class="flex md:order-2">
+
+        <form action="/donate.html">
+
+          <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-lg">Donate</button>
+        </form>
+
+        <!-- <form action="/course-pages/data-analytics.html">
+              <button type="submit" class="btn btn-primary btn-floating mb-3 ">Enroll</button>
+            </form> -->
+
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!-- <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg> -->
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+            <path x-show="!open" fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="/index.html"
+              class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation 6"
+              aria-current="page">Home</a>
+          </li>
+          <!-- <li>
+                <a href="/About Us.html"
+                  class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation 6">About</a>
+              </li> -->
+
+          <li>
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 pl-3 pr-4 px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation ">About
+              <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="#"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About Us</a>
+                </li>
+                <li aria-labelledby="dropdownNavbarLink">
+                  <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                    data-dropdown-placement="right-start" type="button"
+                    class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg
+                      aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg></button>
+                  <div id="doubleDropdown"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                      <li>
+                        <a href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                          Link</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My
+                          Link</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                          Link</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">
+                          Link</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
+              <div class="py-1">
+                <a href="/About Us.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">About
+                  Rotary</a>
+              </div>
+              <div class="py-1">
+                <a href="/memberslist.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">About
+                  Members</a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a href="/members.html"
+              class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation ">Members</a>
+          </li>
+
+          <li>
+            <a href="/Contact Us.html"
+              class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation 6">Contact
+              Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Donate section -->
+  <section class="py-10 mt-20 bg-gray-100">
+    <div
+      class="RV8RoaI_SlEMC5CEQ3ms mDz8RC_zOGy0ceBa3JVu _F_1gdhzusC6tSOWHtx_ _BTfre_DcBxkj7buMlKq UUEOw57fsGfhykSdFAmj">
+      <h2 style="color: black;" class="_9OKVeTXzfSwD_NYO6_G _Bu4HL5sPDOGN_IKUsOc marR_sCaF_d1KewmkXGX ">
+        Donate</h2>
+
+
+      <br>
+      <p style="color: black;"
+        class="XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr UUEOw57fsGfhykSdFAmj HUVIJuZ9QnvurQq0NDcX eCx_6PNzncAD5yo7Qcic">
+        Donating to Rotary means clean water and sanitation. Health and hope in areas that were once ravaged by
+        diseases like polio. Economic development and new opportunities. Your financial help makes all this
+        happen, and more.</p>
+    </div>
+
+    <div class="mx-auto grid max-w-xl  grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+
+      <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl ">
+        <a href="#">
+
+
+          <div class="mt-1 p-2">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 flex flex-col text-center w-full mb-20">
+              Give where the need is greatest
+            </h1>
+            <p class="mt-1 text-lg text-slate-400">When you give to The Rotary Foundation, you fuel our
+              service projects - projects that eradicate polio, promote peace, and improve developing
+              communities.l</p>
+            <br>
+            <div class="mt-3 flex  justify-center">
+
+
+              <div
+                class="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1 pt-5 text-white duration-100 hover:bg-blue-600">
+
+
+                <button class="text-lg">
+
+                  <div class="Pay-button">
+                    <form>
+                      <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                        data-payment_button_id="pl_GLwKHbM1zMVIKA" data-button_text="Donate One"> </script>
+                    </form>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+  </section>
+  <!-- donate section end -->
+
+  <!-- footer -->
+
+  <footer class="relative bg-slate-200 pt-8 pb-6">
+
+   
+    <div class="  container px-4  mx-auto  ">
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-6/12 px-4">
+                <h4 class="text-3xl font-semibold">
+                    <img height="150 px" width="150 px" src="/img/replica.png" alt="" srcset="">
+                </h4>
+                <!-- <h5 class="text-lg mt-0 mb-2 text-slate-600">Find us on any of these platforms, we respond 1-2
+                    business days.</h5> -->
+                <div class="mt-6"><a href="" target="_blank"><i
+                            class="fab fa-instagram bg-white text-sky-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a><a
+                        href=" " target="_blank">
+                        <i
+                            class="fab fa-linkedin bg-white text-sky-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center">
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-6/12 px-4">
+                <div class="flex flex-wrap items-top mb-6">
+                    <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto"><span
+                            class="block uppercase text-slate-500 text-sm font-semibold mb-2">Useful Links</span>
+                        <ul class="list-unstyled">
+                            <li><a class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
+                                    href="/index.html" ">Home</a>
+                            </li>
+                            <li><a class=" text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
+                                    href="/index.html#about" ">About Us</a></li>
+                            <li><a class=" text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
+                                    href="/index.html#services" ">Services</a></li>
+                            <li><a class=" text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
+                                    href="/index.html#faq" ">FAQ</a></li>
+                            <li><a class=" text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
+                                    href="/internship.html" ">Internships</a></li>
+                        </ul>
+                    </div>
+                    <div class=" w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
+                                    <span class="block uppercase text-slate-500 text-sm font-semibold mb-2">Other
+                                        Resources
+                                    </span>
+                                    <ul class="list-unstyled">
+                                        <li><a class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
+                                                href="https://creative-tim.com/terms" target="_blank">Terms &amp;
+                                                Conditions</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
+                                                href="https://creative-tim.com/privacy" target="_blank">Privacy
+                                                Policy</a>
+                                        </li>
+                                        <li>
+                                            <a class="text-slate-600 hover:text-slate-800 font-semibold block pb-2 text-sm"
+                                                href="/contact/form.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <hr class="my-6 border-slate-300">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-slate-500 font-semibold py-1">
+                    <p>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script> Replica Technologies | All rights
+                        reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- js script -->
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <!-- flowbite js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+
+</body>
+
+</html>

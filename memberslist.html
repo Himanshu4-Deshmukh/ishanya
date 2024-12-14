@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html>
+<title>Members List</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- flowbite stylesheet cdn -->
+    <link rel="stylesheet"
+        href="https://d2s3ptptdai04x.cloudfront.net/get-flowbite-pro.b003f310-2085-40b7-8981-f53b3e226b66.css?Expires=1687514530&amp;Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMnMzcHRwdGRhaTA0eC5jbG91ZGZyb250Lm5ldC9nZXQtZmxvd2JpdGUtcHJvLmIwMDNmMzEwLTIwODUtNDBiNy04OTgxLWY1M2IzZTIyNmI2Ni5jc3MiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2ODc1MTQ1MzB9fX1dfQ__&amp;Signature=XB6L3A3-tPdlsWVqUBBLl1dOf7KY11geE4RSmEWXXXvkT8QpMkSEImG~y1FBfMKEphiDIZIARlwU6yQoMFzxGa-LWr6DTOP2OS4Spd54zHZl-D1mNjj6aaFp4RppMos3~FIDPAcWiQem2lu~rinTpKf~7elFzjd5Tr9aU7Bb-Yu0Jq53PtFoX~E0XxTtmNyL05SsXE0u97YTtQnqtMsaJFu-Ef-~zbQDA0pkTC-4fjKGBwZq0NBDxiTAbQ96zWMMopqeN81yTeAQK4Z4bNEZbzLjqALJl771QDCnWT6VAphr8MhoNePZKSM4TFHCvtrEszLnEBwkiVhCNrVFdbwBkA__&amp;Key-Pair-Id=K2J5W1U51CTOXP">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { "50": "#fdf2f8", "100": "#fce7f3", "200": "#fbcfe8", "300": "#f9a8d4", "400": "#f472b6", "500": "#ec4899", "600": "#db2777", "700": "#be185d", "800": "#9d174d", "900": "#831843" }
+                    }
+                },
+                fontFamily: {
+                    "body": ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "system-ui", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+                    "sans": ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "system-ui", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
+                }
+            }
+        }
+    </script>
+
+
+    <style>
+        /* ! tailwindcss v3.3.0 | MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-feature-settings: normal;
+            font-variation-settings: normal
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        [type=button],
+        [type=reset],
+        [type=submit],
+        button {
+            /* -webkit-appearance: button; */
+            background-color: transparent;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            /* -webkit-appearance: textfield; */
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            /* vertical-align: middle */
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden] {
+            display: none
+        }
+
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia:
+        }
+
+        ::-webkit-backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia:
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia:
+        }
+
+
+        .dropbtn {
+            background-color: #0087ca;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 135px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            border-radius: 20px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            border-radius: 20px;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #0087fa;
+        }
+
+        .bg-video{
+            position: absolute;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- navbar -->
+    <!-- <div class="w-full sticky top-0 z-30 text-gray-700 bg-white shadow-md dark-mode:text-gray-200 dark-mode:bg-gray-800">
+        <div x-data="{ open: false }"
+          class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+          <div class="p-4 flex flex-row items-center justify-between">
+            <a href="/index.html"
+              class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+              <img
+                src="https://brandcenter.rotary.org/-/jssmedia/project/rotary/brandcenter/rotarymbs-simple_rgb.png?mw=116&mh=44"
+                width="100px">
+            </a>
+            <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path x-show="!open" fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+                <path x-show="open" fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+          <nav :class="{'flex': open, 'hidden': !open}"
+            class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+    
+            <a class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation 6"
+              href="/index.html">Home</a>
+    
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+              <button @click="open = !open"
+                class="flex flex-row items-center w-full px-4 py-2 mt-2 text-lg font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 hover-underline-animation">
+                <span>About</span>
+                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                  class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <div style="z-index:10;" x-show="open" x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="  absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="/About Us.html">About Rotary</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="/memberslist.html">Members</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="/members.html">About Members</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">About Work</a>
+                </div>
+              </div>
+            </div>
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+              <button @click="open = !open"
+                class="flex flex-row items-center w-full px-4 py-2 mt-2 text-lg font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 hover-underline-animation">
+                <span>Dropdown</span>
+                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                  class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <div style="z-index:10;" x-show="open" x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="  absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Link #1</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Link #2</a>
+                  <a class="block px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#">Link #3</a>
+                </div>
+              </div>
+    
+    
+    
+            </div>
+    
+            <a class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover-underline-animation"
+              href="/Contact Us.html">Contact Us</a>
+    
+            <a href="/signin.html"
+              class="hover-underline-animation sign-icon px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover-underline-animation"><i
+                class="fa-solid fa-user" style="color: #0087ca;"></i></a>
+    
+            <div class="flex items-center ml-4  rounded-lg  bg-blue-500 px-4  text-white duration-100 hover:bg-blue-600">
+              <button class="text-lg"> <a href="/donate.html"> Donate</a>
+              </button>
+            </div>
+          </nav>
+    
+        </div>
+      </div> -->
+
+      <nav class="bg-white shadow-md dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200  dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="" class="flex items-center">
+            <img src="https://www.rotary-ribi.org/upimages/PageMainPics/4_Wheel2013_Transp_1200.png" class="h-8 mr-3"
+              alt=" Logo">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ishanya</span>
+          </a>
+          <div class="flex md:order-2">
+            
+    
+            <form action="/donate.html">
+    
+              <button type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4  mt-2 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 text-lg">Donate</button>
+            </form>
+            <a href="/signin.html"
+            class="hover-underline-animation ml-3 sign-icon px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover-underline-animation"><i
+              class="fa-solid fa-user" style="color: #0087ca;"></i></a>
+    
+         
+    
+            <button data-collapse-toggle="navbar-sticky" type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg> -->
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path x-show="!open" fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+               
+              </svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="/index.html"
+                  class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation 6"
+                  aria-current="page">Home</a>
+              </li>
+              <!-- <li>
+                <a href="/About Us.html"
+                  class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation 6">About</a>
+              </li> -->
+            
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation ">About
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg></button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About Us</a>
+                    </li>
+                    <li aria-labelledby="dropdownNavbarLink">
+                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                        data-dropdown-placement="right-start" type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg
+                          aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd"
+                            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                            clip-rule="evenodd"></path>
+                        </svg></button>
+                      <div id="doubleDropdown"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"> Link</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My
+                               Link</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"> Link</a>
+                          </li>
+                          <li>
+                            <a href="#"
+                              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"> Link</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                   
+                  </ul>
+                  <div class="py-1">
+                    <a href="/About Us.html"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">About Rotary</a>
+                  </div>
+                  <div class="py-1">
+                    <a href="/memberslist.html"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">About Members</a>
+                  </div>
+                </div>
+              </li>
+    
+              <li>
+                <a href="/members.html"
+                  class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation ">Members</a>
+              </li>
+            
+              <li>
+                <a href="/Contact Us.html"
+                  class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200  md:mt-0 hover-underline-animation 6">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- bg video -->
+<video class="bg-video mt-20" src="https://assets.mixkit.co/videos/preview/mixkit-bubbling-water-in-slow-motion-182-large.mp4" autoplay loop  ></video>
+
+
+ 
+
+    <!-- dropdown -->
+    <div class="dropdown mt-24" style="float:right;">
+        <button class="dropbtn">Choose a Year</button>
+        <div class="dropdown-content">
+            <a href="#">2022</a>
+            <a href="#">2021</a>
+            <a href="#">2020</a>
+        </div>
+    </div>
+    <br><br> <br>
+    <br><br> <br>
+
+    <!-- heading -->
+    <div 
+        class="RV8RoaI_SlEMC5CEQ3ms mDz8RC_zOGy0ceBa3JVu _F_1gdhzusC6tSOWHtx_ _BTfre_DcBxkj7buMlKq UUEOw57fsGfhykSdFAmj">
+        <h2 style="color: #fff;"
+            class="_9OKVeTXzfSwD_NYO6_G _Bu4HL5sPDOGN_IKUsOc marR_sCaF_d1KewmkXGX P2kov_od1FPjxxII24T5 g3OYBOqwXUEW4dRGogkH a0Ed69aMSu0vgf4oysz0">
+            Members List</h2>
+        <h2 style="color: #fff;" class=" _Bu4HL5sPDOGN_IKUsOc P2kov_od1FPjxxII24T5 ">2022</h2>
+
+        <br>
+        <p style="color: #fff;"
+            class="XdjN1uxS_rsa3F90ox40 K1PPCJwslha8GUIvV_Cr UUEOw57fsGfhykSdFAmj HUVIJuZ9QnvurQq0NDcX eCx_6PNzncAD5yo7Qcic">
+            Innovation grows out of membership and a sure sense of responsibility people feel for their work and the organizations that employ them.</p>
+    </div>
+
+    <!-- table -->
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div class="flex items-center justify-between py-4 bg-white dark:bg-gray-800">
+
+
+        </div>
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="p-4">
+                        Sr
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Position
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Project
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Year
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr
+                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <td class="w-4 p-4">
+                        1
+                    </td>
+                    <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://play-lh.googleusercontent.com/2EA71-TRMKp1jUxOc6u-v1VUe5kDDznC4BdU6W2OMgxT3d-GQHEPNDshREQMSVIem3I"
+                            alt="Jese image">
+                        <div class="pl-3">
+                            <div class="text-base font-semibold">Neil Sims</div>
+                            <div class="font-normal text-gray-500">example@gmail.com</div>
+                        </div>
+                    </th>
+                    <td class="px-6 py-4">
+                        React Developer
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center">
+                            <div class=""></div> xyz
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+
+                        <p class="font-medium ">2022-2023</p>
+                    </td>
+                </tr>
+                <tr
+                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <td class="w-4 p-4">
+                        2
+                    </td>
+                    <th scope="row"
+                        class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://play-lh.googleusercontent.com/2EA71-TRMKp1jUxOc6u-v1VUe5kDDznC4BdU6W2OMgxT3d-GQHEPNDshREQMSVIem3I"
+                            alt="Jese image">
+                        <div class="pl-3">
+                            <div class="text-base font-semibold">Bonnie Green</div>
+                            <div class="font-normal text-gray-500">example@gmail.com</div>
+                        </div>
+                    </th>
+                    <td class="px-6 py-4">
+                        Designer
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center">
+                            <div class=""></div> xyz
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+
+                        <p class="font-medium ">2022-2023</p>
+                    </td>
+                </tr>
+                <tr
+                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <td class="w-4 p-4">
+                        2
+                    </td>
+                    <th scope="row"
+                        class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://play-lh.googleusercontent.com/2EA71-TRMKp1jUxOc6u-v1VUe5kDDznC4BdU6W2OMgxT3d-GQHEPNDshREQMSVIem3I"
+                            alt="Jese image">
+                        <div class="pl-3">
+                            <div class="text-base font-semibold">Jese Leos</div>
+                            <div class="font-normal text-gray-500"> example@gmail.com</div>
+                        </div>
+                    </th>
+                    <td class="px-6 py-4">
+                        Vue JS Developer
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center">
+                            <div class=""></div> xyz
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+
+                        <p class="font-medium ">2022-2023</p>
+                    </td>
+                </tr>
+                <tr
+                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <td class="w-4 p-4">
+                        2
+                    </td>
+                    <th scope="row"
+                        class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://play-lh.googleusercontent.com/2EA71-TRMKp1jUxOc6u-v1VUe5kDDznC4BdU6W2OMgxT3d-GQHEPNDshREQMSVIem3I"
+                            alt="Jese image">
+                        <div class="pl-3">
+                            <div class="text-base font-semibold">Thomas Lean</div>
+                            <div class="font-normal text-gray-500">example@gmail.com</div>
+                        </div>
+                    </th>
+                    <td class="px-6 py-4">
+                        UI/UX Engineer
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center">
+                            <div class=""></div> xyz
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+
+                        <p class="font-medium ">2022-2023</p>
+                    </td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <td class="w-4 p-4">
+                        3
+                    </td>
+                    <th scope="row"
+                        class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <img class="w-10 h-10 rounded-full"
+                            src="https://play-lh.googleusercontent.com/2EA71-TRMKp1jUxOc6u-v1VUe5kDDznC4BdU6W2OMgxT3d-GQHEPNDshREQMSVIem3I"
+                            alt="Jese image">
+                        <div class="pl-3">
+                            <div class="text-base font-semibold">Leslie Livingston</div>
+                            <div class="font-normal text-gray-500"> example@gmail.com</div>
+                        </div>
+                    </th>
+                    <td class="px-6 py-4">
+                        SEO Specialist
+                    </td>
+                    <td class="px-6 py-4">
+                        <div class="flex items-center">
+                            <div class=""></div> xyz
+                        </div>
+                    </td>
+                    <td class="px-6 py-4">
+
+                        <p class="font-medium ">2022-2023</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+    <!-- footer -->
+    <footer class="text-gray-600 body-font" style="background-color: azure;">
+
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div style="z-index: 1;" class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <img src="https://brandcenter.rotary.org/-/jssmedia/project/rotary/brandcenter/rotarymbs-simple_rgb.png?mw=116&mh=44"
+                        width="50%" alt="" srcset="">
+
+                </a>
+                <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-100">
+            <footer class="text-gray-600 body-font">
+                <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                        <img src="https://assets.stickpng.com/images/60928c2de4801d000467a0bb.png" width="50px" alt=""
+                            srcset="">
+                        <span class="ml-3 text-xl">Rotary Ishanya</span>
+                    </a>
+                    <span class="ml-3 text-xl"> &#124;&#124;</span>
+                    <p class="text-lg text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"> 
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script> Rotary Ishanya | All rights reserved
+                      
+                      </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                        <a class="text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500">
+                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                <path stroke="none"
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                </path>
+                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </footer>
+            <!-- footer end -->
+
+
+            <!--footer animation  -->
+            <row>
+                <svg viewBox="0 0 120 28">
+                    <defs>
+                        <mask id="xxx">
+                            <circle cx="7" cy="12" r="40" fill="#fff" />
+                        </mask>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="
+             1 0 0 0 0  
+             0 1 0 0 0  
+             0 0 1 0 0  
+             0 0 0 13 -9" result="goo" />
+                            <feBlend in="SourceGraphic" in2="goo" />
+                        </filter>
+                        <path id="wave"
+                            d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                    </defs>
+                    <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+                    <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+                </svg>
+            </row>
+        </div>
+    </footer>
+
+    <!-- footer animation ends -->
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <!-- flowbite cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+
+</body>
+
+</html>
